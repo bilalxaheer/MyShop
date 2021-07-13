@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MyShop.DataAccess.Sql
+
 {
     public class DataContext : DbContext
     {
@@ -20,5 +21,6 @@ namespace MyShop.DataAccess.Sql
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }

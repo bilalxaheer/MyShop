@@ -35,7 +35,7 @@ namespace MyShop.WebUI.Controllers
 
             return RedirectToAction("Index");
         }
-
+        //PartialViewResult
         public PartialViewResult BasketSummary()
         {
             var basketSummary = basketService.GetBasketSummary(this.HttpContext);
